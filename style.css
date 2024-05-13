@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: gray;
+  background-color: #FFFCF8;
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
