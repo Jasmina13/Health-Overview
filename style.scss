@@ -1,0 +1,41 @@
+@import "./sass/variables/variables";
+@import "./sass/mixin/flex";
+@import "./sass/body";
+@import "./sass/allblocks/allblocks";
+
+.main-section{
+    .main-section__all-items{
+        @include flex-between;
+        gap: 30px;
+        .all-items__first-items-block{
+            width: 850px;
+            .first-items-block__heading-title{
+                @include flex-between-center;
+                i{
+                    background-color: white;
+                    padding:7px 13px;
+                    margin: 0 5px;
+                    border: 1px solid #f2f2f2;
+                    border-radius: 10px;
+                }
+            }
+            .first-items-block__subtitle{
+                padding: 20px;
+                @include flex-between-center;
+                > div{
+                    width: 250px;
+                    height: 300px;
+                    border-radius: 20px;
+                    background-color: white;
+                    >div{
+                        padding: 20px;
+                        @include flex-between-center;
+                    }
+                }
+            }
+        }
+        .all-items__second-items-block{
+            width: 500px;
+        }
+    }
+}
